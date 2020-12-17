@@ -20,7 +20,7 @@ function writePassword() {
     var symbolCase = confirm("include symbols?");
     
     var pwdLength = prompt("How many characters would you like to have between 8-128?");
-    if (pwdLength < 88 || pwdLength > 128){
+    if (pwdLength < 8 || pwdLength > 128){
       alert("pick a length for your password between 8-128.");
       return;
     }
