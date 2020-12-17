@@ -19,7 +19,27 @@ function writePassword() {
     var numberCase = confirm("include numbers?");
     var symbolCase = confirm("include symbols?");
     
-  
+    var pwdLength = prompt("How many characters would you like to have between 8-128?");
+    if (pwdLength < 88 || pwdLength > 128){
+      alert("pick a length for your password between 8-128.");
+      return;
+    }
+    if (upperCase){
+      allChar.concat(upperC);
+    }
+    if (lowerCase){
+      allChar.concat(lowerC);
+    }
+    if (numberCase){
+      all.char.concat(number);
+    }
+    if (symbolCase){
+      all.char.concat(symbol);
+    }
+    if (!upperC && !lowerC && !number && !symbol){
+      alert("You need one of these choices.");
+      return;
+    }
 
   }
 }
