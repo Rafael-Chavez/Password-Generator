@@ -3,7 +3,6 @@ var generateBtn = document.querySelector("#generate");
 
 
 
-  
   // var upperCase = ["ABCDEFGHJILKLMNOPQRSTUVWXYZ"];
   // var numeric = [];
   // var specialCharacters = [!@#$%^&*()]
@@ -14,14 +13,9 @@ function writePassword() {
 
   passwordText.value = password;
 
-  var lowerCase = ["abcdefghijklmnopqrstuvwxyz"];
+  
 }
-var lengthOfPassword = prompt("Choose between 8-128 characters for your password.");
 
-
-function generatePassword(){
-
-  return "temporary password";
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
