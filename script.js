@@ -13,7 +13,7 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 }
-  passwordText.value = password;
+  // passwordText.value = password;
 
   function generatePassword(){
     var upperCase = confirm("include upper case letters?");
@@ -26,19 +26,19 @@ function writePassword() {
       alert("pick a length for your password between 8-128.");
       return;
     }
-    if (upperCase){
+    else if (upperCase){
       allChar.concat(upperCaseValue);
     }
-    if (lowerCase){
+    else if (lowerCase){
       allChar.concat(lowerCaseValue);
     }
-    if (numberCase){
+    else if (numberCase){
       all.char.concat(numeric);
     }
-    if (symbolCase){
+    else if (symbolCase){
       all.char.concat(specialCharacters);
     }
-    if (!upperC && !lowerC && !number && !symbol){
+    else (!upperC && !lowerC && !number && !symbol){
       alert("You need one of these choices.");
       return;
     }
