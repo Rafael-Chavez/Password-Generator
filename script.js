@@ -14,8 +14,12 @@ function writePassword() {
    passwordText.value = password;
 }  
   var passwordLength = prompt("Please type how long you want your password to be from 8-128.");
-  
-
+  if (passwordLength < 8 || passwordLength > 128){
+    alert("Please choose a number between 8 and 128");
+  }
+  else {
+    console.log("good job!");
+  }
 function generatePassword(){
   return "temporary password"
 }
