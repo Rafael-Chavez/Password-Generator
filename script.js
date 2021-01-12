@@ -20,6 +20,17 @@ function writePassword() {
   else {
     console.log("good job!");
   }
+var lowerCase = confirm("Do you want your password to contain lower case letters?");
+
+
+
+
+
+
+
+
+
+
 function generatePassword(){
   return "temporary password"
 }
