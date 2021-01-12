@@ -13,6 +13,7 @@ function writePassword() {
   
    passwordText.value = password;
 }  
+// We ask the user to determine how long they want their generated password to be.
   var passwordLength = prompt("Please type how long you want your password to be from 8-128.");
   if (passwordLength < 8 || passwordLength > 128){
     alert("Please choose a number between 8 and 128");
@@ -20,6 +21,7 @@ function writePassword() {
   else {
     console.log("good job!");
   }
+  // we use a 'confirm' to determine if they want lowercase characters in their password.
 var lowerCase = confirm("Do you want your password to contain lower case letters?");
 if (lowerCase){
   console.log(lowerCase);
@@ -35,7 +37,7 @@ if (lowerCase){
 
 
 function generatePassword(){
-  return "temporary password"
+  return password;
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
