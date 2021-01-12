@@ -21,6 +21,9 @@ function writePassword() {
     console.log("good job!");
   }
 var lowerCase = confirm("Do you want your password to contain lower case letters?");
+if (lowerCase){
+  console.log(lowerCase);
+}
 
 
 
